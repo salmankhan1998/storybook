@@ -1,0 +1,14 @@
+/* .dialog-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: calc(100vh - 56px);
+  background: rgba(241, 241, 241, 0.8);
+  backdrop-filter: blur(20px);
+} */
+
+.overlay {
+  background: rgba(241, 241, 241, 0.8);
+  backdrop-filter: blur(20px);
+}

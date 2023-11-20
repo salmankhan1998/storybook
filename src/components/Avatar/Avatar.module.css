@@ -1,0 +1,26 @@
+.small-avatar {
+  @apply w-[18px] h-[18px] object-cover;
+}
+
+.medium-avatar {
+  @apply w-[45px] h-[46px] object-cover;
+}
+
+.small-medium-avatar {
+  @apply w-[24px] h-[24px] object-cover;
+}
+.large-avatar {
+  @apply w-[130px] h-[130px] object-cover;
+}
+
+.half {
+  @apply rounded;
+}
+
+.full {
+  @apply rounded-full;
+}
+/* 
+. {
+  @apply border-[1.5px] border-white-900;
+} */

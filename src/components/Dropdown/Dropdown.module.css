@@ -1,0 +1,53 @@
+.subcategory-field {
+  width: max-content;
+  position: relative;
+  z-index: 5;
+  user-select: none;
+  padding: 0 5px;
+}
+
+.subcategory-field .subcategory-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+  border-radius: 5px 8px 8px 5px;
+  cursor: pointer;
+  height: 24px;
+  gap: 5px;
+}
+
+.subcategory-field .subcategory-menu #select-text {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.subcategory-field ul {
+  padding-top: 5px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  list-style: none;
+  box-shadow: 1px 1px 5px 1px #f5fbf7;
+}
+
+.subcategory-field ul li {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: #000000;
+}
+
+.subcategory-field ul li:hover {
+  background-color: #27303e;
+  color: #f5fbf7;
+  border-radius: 3px;
+}

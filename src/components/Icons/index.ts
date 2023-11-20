@@ -1,0 +1,17 @@
+export { default as Book } from "./book-icon";
+export { default as BookOpenIcon } from "./book-open-icon";
+export { default as Bookmark } from "./bookmark";
+export { default as Discord } from "./discord";
+export { default as Feather } from "./feather";
+export { default as LinkedIn } from "./linkedIn";
+export { default as Setting } from "./setting";
+export { default as Twitter } from "./twitter";
+export { default as ArrowDown } from "./arrow-down";
+export { default as ArrowRight } from "./arrow-right";
+export { default as ArrowLeft } from "./arrow-left";
+export { default as Cross } from "./cross";
+export { default as Wallet } from "./wallet";
+export { default as Compress } from "./compress";
+export { default as Hourglass } from "./hourglass";
+export { default as TextSize } from "./text-size";
+export { default as Edit } from "./edit";

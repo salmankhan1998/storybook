@@ -1,0 +1,46 @@
+.card {
+  position: relative;
+  max-width: 318px;
+  border-radius: 10px;
+}
+
+.card .card-Img {
+  width: 318px;
+  height: 204px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card .card-Img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.card .card-body .time {
+  padding: 10px 0;
+}
+
+.card .author-bx {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.card .author-bx .avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.card .author-bx .author {
+  font-weight: 700;
+}

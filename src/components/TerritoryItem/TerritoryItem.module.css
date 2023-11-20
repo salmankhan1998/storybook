@@ -1,0 +1,27 @@
+.blue {
+  @apply bg-blue-500;
+}
+
+.yellow {
+  @apply bg-yellow-100;
+}
+
+.pink {
+  @apply bg-pink-100;
+}
+
+.purple {
+  @apply bg-purple-100;
+}
+
+.green {
+  @apply bg-green-500;
+}
+
+.small-circle {
+  @apply w-2 h-2;
+}
+
+.medium-circle {
+  @apply w-8 h-8;
+}

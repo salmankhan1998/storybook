@@ -1,0 +1,65 @@
+.dialog-box .passport {
+  position: absolute;
+  width: 607px;
+  height: 376px;
+  padding: 26px 51px 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.dialog-box .passport .cross-icon {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+}
+
+.dialog-box .passport .passport-row {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.dialog-box .passport .passport-row .left-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 252.11px;
+  width: 100%;
+}
+
+.dialog-box .passport .passport-row .left-col p {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+.dialog-box .passport .passport-row .right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px 0 20px;
+}
+
+.dialog-box .passport .passport-row .right-col .user {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  color: #151515;
+}
+
+.dialog-box .passport .passport-row .right-col .name {
+  font-family: "Mukta";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  color: #151515;
+}

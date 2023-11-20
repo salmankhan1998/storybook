@@ -1,0 +1,63 @@
+/* .btn {
+  @apply  !important;
+} */
+
+/* .btn:hover {
+  border: 2px solid #c5c5c5;
+}
+.btn:disabled {
+  cursor: disabled;
+  @apply bg-slate-400;
+} */
+.small {
+  @apply text-xs leading-5;
+}
+
+.medium {
+  @apply text-sm leading-snug;
+}
+
+.large {
+  @apply text-base leading-snug;
+}
+
+.contained {
+  @apply text-gray-50 bg-black-900 !important;
+}
+
+.primary {
+  @apply bg-white-800 shadow text-black-900;
+}
+
+.secondary {
+  @apply border text-black-900 bg-gray-50 border-black-900;
+}
+
+.dark {
+  @apply !text-gray-50 bg-black-700;
+}
+
+.green {
+  @apply border-none bg-green-500;
+}
+
+.green:hover {
+  border: none;
+}
+
+.primary:disabled,
+.secondary:disabled,
+.contained:disabled,
+.green:disabled,
+.dark:disabled {
+  cursor: disabled;
+  @apply bg-slate-400;
+}
+
+.half {
+  @apply rounded-md;
+}
+
+.full {
+  @apply rounded-full;
+}

@@ -1,0 +1,120 @@
+/* input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+} */
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+/* input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(29, 78, 216, 0.2);
+  height: 6px;
+} */
+
+/******** Firefox ********/
+/* input[type="range"]::-moz-range-track {
+  background: rgba(29, 78, 216, 0.2);
+  height: 6px;
+} */
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+/* input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+/*appearance: none;
+  margin-top: -12px;
+  background-color: transparent;
+  height: 0px;
+  width: 0px;
+} */
+
+/***** Thumb Styles *****/
+/***** Firefox *****/
+/* input[type="range"]::-moz-range-thumb {
+  border: none; /*Removes extra border that FF applies*/
+/*border-radius: 0; /*Removes default border-radius that FF applies*/
+/*background-color: transparent;
+  height: 0;
+  width: 0;
+} */
+
+/* .range-slider {
+  margin: 60px 0 0 0%;
+}
+
+.range-slider {
+  width: 100%;
+}
+
+.range-slider-range {
+  -webkit-appearance: none;
+  width: calc(100% - (60px + 13px));
+  height: 10px;
+  border-radius: 5px;
+  background: #d7dcdf;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+/* // Range Handle */
+/* .range-slider-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 0px;
+  border-radius: 50%;
+  background: #1abc9c;
+  cursor: pointer;
+}
+
+.range-slider-range:active::-webkit-slider-thumb {
+  background: #1abc9c;
+}
+
+.range-slider-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 50%;
+  background: #1abc9c;
+  cursor: pointer;
+}
+
+.range-slider-range:active::-moz-range-thumb {
+  background: #1abc9c;
+}
+
+/* // Range Label */
+/* .range-slider-value {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+.range-slider-value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+  content: "";
+} */
+
+/* // Firefox Overrides */
+/* .range-slider-range::-moz-range-track {
+  background: #d7dcdf;
+  border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+  border: 0;
+}  */

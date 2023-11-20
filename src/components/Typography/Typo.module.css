@@ -1,0 +1,77 @@
+.h1 {
+  @apply text-[100px] leading-[113px] font-extrabold text-center not-italic tracking-[-0.04em];
+}
+
+.h2 {
+  @apply text-[80px] leading-[113px] font-normal not-italic tracking-[-0.04em];
+}
+
+.h3 {
+  color: #151515;
+
+  @apply text-[64px] leading-[113px] font-medium text-center not-italic tracking-[-0.04em];
+}
+
+.h4 {
+  color: #000000;
+
+  @apply text-6xl leading-[72px] font-semibold text-center not-italic tracking-[-0.04em];
+}
+
+.h5 {
+  color: #0f172a;
+
+  @apply text-[40px] leading-[60px] font-semibold not-italic tracking-[-0.04em];
+}
+
+.h6 {
+  color: #000000;
+
+  @apply text-4xl leading-[44px] font-bold not-italic;
+}
+
+.p1 {
+  color: #000000;
+
+  @apply text-[32px] leading-[58px] font-normal text-center not-italic;
+}
+
+.p2 {
+  color: #000000;
+
+  @apply text-[32px] leading-[50px] font-light not-italic lowercase tracking-[-0.04em];
+}
+
+.p3 {
+  color: #000000;
+
+  @apply text-[26px] leading-[34px] font-bold not-italic;
+}
+
+.p4 {
+  @apply font-lancelot text-2xl font-normal leading-[30px] not-italic text-[#151515];
+}
+
+.p5 {
+  color: #475467;
+
+  @apply text-lg leading-normal font-medium not-italic;
+}
+
+.p6 {
+  @apply text-base font-normal leading-tight not-italic text-[#334155];
+}
+
+.p7 {
+  color: #334155;
+
+  @apply text-sm leading-[15px] font-normal not-italic tracking-[0.02em];
+}
+
+.dark {
+  color: #0f172a;
+}
+
+.light {
+  color: #ffffff;
+}

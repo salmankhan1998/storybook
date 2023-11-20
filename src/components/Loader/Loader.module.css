@@ -1,0 +1,7 @@
+.animate_dot {
+  @apply animate-moving-dots;
+}
+
+.animate_dot.last {
+  animation-delay: 2.2s;
+}

@@ -1,0 +1,44 @@
+.pill {
+  width: 149px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 20px;
+  padding: 7px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  font-family: "Mukta";
+  /* or 19px */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+/* .small {
+  padding: 8px 12px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.medium {
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 22px;
+} */
+
+.blue {
+  background: #c2deff;
+}
+
+.yellow {
+  background: #feffc2;
+}
+
+.purple {
+  background: #c7b9ff;
+}
+
+.pink {
+  background: #ffc7c2;
+}
