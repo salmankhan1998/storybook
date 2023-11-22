@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Button from "../Button";
 import Icon from "../Icon/Icon";
 import "./Navbar.module.css";
-
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import Container from "../Container/Container";
 export interface NavbarProps {
   loggedIn?: boolean;
@@ -22,7 +20,6 @@ const Navbar: React.FC<NavbarProps> = ({
   handleLogin,
   handleWallet,
 }) => {
-  const passport = useAppSelector((state) => state.eth.passport);
 
   return (
     <nav
@@ -39,7 +36,7 @@ const Navbar: React.FC<NavbarProps> = ({
             <div className={`pr-4 pt-3`}>{passport?.username}</div>
           )} */}
           <div className={``}>
-            {loggedIn && passport?.total > 0 && (
+            {loggedIn && (
               <div className="relative w-[36px] h-[36px]">
                 <img
                   src={Images.Avatar}
@@ -67,7 +64,7 @@ const Navbar: React.FC<NavbarProps> = ({
               className="text-base px-3 py-1 text-[#0F172A] rounded-[5px] bg-green-500"
               onClick={handleWallet}
             >
-              <Icon handleClick={() => {}} type="Wallet" />
+              <Icon handleClick={() => { }} type="Wallet" />
             </div>
           )}
         </div>

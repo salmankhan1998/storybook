@@ -42,7 +42,7 @@ const Card: React.FC<ArticleCardProps> = ({
   return (
     <div
       data-testid="Card"
-      className={`relative  w-full rounded-xl bg-white px-[22px] py-8 ${horizontal ? "max-w-44 flex flex-row-reverse gap-20" : "max-w-21"
+      className={`relative w-full rounded-xl bg-white px-[22px] py-8 ${horizontal ? "max-w-44 flex flex-row-reverse gap-20" : "max-w-21"
         } `}
     >
       <div>

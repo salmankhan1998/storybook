@@ -1,4 +1,4 @@
-/* .card {
+.card {
   position: relative;
   max-width: 318px;
   border-radius: 10px;
@@ -44,7 +44,6 @@
 .card .author-bx .author {
   font-weight: 700;
 }
- */
 
 .avatar:first-child {
   z-index: 1;

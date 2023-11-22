@@ -1,16 +1,14 @@
 import React, { useRef } from "react";
 import Button from "../Button/Button";
 import Typo from "../Typography/Typo";
-import { useAppDispatch, useAppSelector } from "../../store/hooks";
 export interface ProfileCardProps {
   address?: string;
   // handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 const ProfileCard: React.FC<ProfileCardProps> = ({ address }) => {
+  const ref = useRef<HTMLDivElement>(null);
   let newAddress = address && address.slice(address.length - 4);
-  const ref = useRef();
-  const eth = useAppSelector((state) => state.eth);
-  const dispatch = useAppDispatch();
+
   const HandleDisconnect = () => {
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("token");

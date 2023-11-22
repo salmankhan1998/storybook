@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { useAppSelector } from "../../store/hooks";
 import "./Bio.module.css";
 export interface BioProps {
   label?: string;
   bio?: string;
-  setBio?: string;
+  setBio: (val: string) => void;
 }
 
 const Input: React.FC<BioProps> = ({ label, bio, setBio }) => {

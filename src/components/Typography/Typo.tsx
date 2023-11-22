@@ -5,20 +5,20 @@ export interface TypoProps {
   title?: string;
   className?: string;
   variant?:
-    | "H1"
-    | "H2"
-    | "H3"
-    | "H4"
-    | "H5"
-    // | "H6"
-    | "p1"
-    | "p2"
-    | "p3"
-    | "p4"
-    | "p5"
-    | "p6"
-    | "p7"
-    | undefined;
+  | "H1"
+  | "H2"
+  | "H3"
+  | "H4"
+  | "H5"
+  // | "H6"
+  | "p1"
+  | "p2"
+  | "p3"
+  | "p4"
+  | "p5"
+  | "p6"
+  | "p7"
+  | undefined;
   fontWeight?: "normal" | "medium" | "semibold" | "bold";
 }
 
