@@ -32,7 +32,7 @@ const Loader: React.FC<LoaderProps> = ({ title }) => {
           />
           <div className="w-10 flex flex-shrink-0">
             <span className={`text-[20px] block`}>.</span>
-            <div className={`flex animate_dot ${styles.animate_dot}`}>
+            <div className={`flex`}>
               <span className={`text-[20px] block `}>.</span>
               <span
                 className={`text-[20px] block animate_dot last ${cx(
