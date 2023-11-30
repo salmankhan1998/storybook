@@ -2,7 +2,6 @@ import React from "react";
 import { ComponentStory, Meta } from "@storybook/react";
 import { Default, Primary, Secondary, Dark } from "./fixtures";
 import Buttons, { ButtonProps } from "./index";
-import { StayPrimaryLandscape } from "@mui/icons-material";
 export default { title: "Components/Buttons", component: Buttons } as Meta;
 
 const Template = (args: ButtonProps) => <Buttons {...args} />;

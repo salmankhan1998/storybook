@@ -5,7 +5,7 @@ import * as Icons from "../Icons";
 export interface IconProps {
   type?: string;
   icon?: string;
-  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  handleClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 
 const Icon: React.FC<IconProps> = ({ type, handleClick }) => {

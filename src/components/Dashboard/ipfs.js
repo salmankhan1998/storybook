@@ -1,3 +1,5 @@
+"use client";
+
 const axios = require("axios");
 import React, { useEffect, useState } from "react";
 import {

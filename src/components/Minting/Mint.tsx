@@ -124,7 +124,7 @@ const Mint: React.FC<MintingProps> = ({
                     title="save"
                     round="half"
                     // disabled={mintingStart}
-                    onClick={() => { }}
+                    handleClick={() => { }}
                   />
                 </div>
               </div>
@@ -142,7 +142,7 @@ const Mint: React.FC<MintingProps> = ({
             variant="contained"
             title="Mint Passport"
             disabled={false}
-            onClick={() => { }}
+            handleClick={() => { }}
           />
         </form>
       </div>

@@ -47,7 +47,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ address }) => {
         variant="secondary"
         round="half"
         size="small"
-        onClick={HandleDisconnect}
+        handleClick={() => { HandleDisconnect }}
       />
     </div>
   );

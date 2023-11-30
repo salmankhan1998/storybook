@@ -150,8 +150,8 @@ const Profile = ({ contract, account }) => {
                         isActive === index
                           ? "bg-gray-500 text-blue-300 mt-2"
                           : isActiveParent === index
-                          ? "bg-gray-500 text-red-300 mt-2"
-                          : "mt-2"
+                            ? "bg-gray-500 text-red-300 mt-2"
+                            : "mt-2"
                       }
                     >
                       {article}
@@ -196,7 +196,7 @@ const Profile = ({ contract, account }) => {
             <Button
               variant="text"
               disabled={!email || !userName}
-              onClick={mintPassport}
+              handleClick={mintPassport}
               className="inline-block mt-5 px-6 py-2.5 mb-10 bg-blue-600 text-white-900 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
             >
               Create New Passport

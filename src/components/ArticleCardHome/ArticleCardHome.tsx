@@ -1,14 +1,16 @@
+'use client';
 import Typo from "../Typography/Typo";
 import Button from "../Button/Button";
 import Pill from "../Pills/Pill";
+import Image from "next/image";
 
 export interface ArticleProps {
   id: number;
-  title: string;
-  text: string;
-  image: string;
-  author: string;
-  date: string;
+  title?: string;
+  text?: string;
+  articleImage?: string;
+  author?: string;
+  date?: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
@@ -21,7 +23,7 @@ export default function ArticleCard({
   id,
   title,
   text,
-  image,
+  articleImage,
   author,
   date,
   onClick,
@@ -34,7 +36,7 @@ export default function ArticleCard({
             <Typo variant="H5" title={`0${id + 1}.`} className="text-[48px]" />
           </div>
           <div className="w-[410px] h-[330px] flex-shrink-0">
-            <img src={image} alt="article image" />
+            <Image src={articleImage ? articleImage : ''} alt="article image" width={200} height={200} />
           </div>
           <div className="absolute bottom-6 left-8">
             <Pill title="Bookworm Valley" variant="yellow" />
@@ -50,8 +52,8 @@ export default function ArticleCard({
           />
 
           <Button
-            arrow
-            onClick={() => {}}
+            arrow={true}
+            // handleClick={() => { }}
             round="half"
             size="small"
             title="Default Button"
@@ -68,14 +70,14 @@ export default function ArticleCard({
           <button
             type="button"
             className="flex items-center px-4 py-3 bg-gray-100 rounded-full"
-            onClick={() => {}}
+            onClick={() => { }}
           >
             <img src={Icons.ChevronArrow} alt="arrow left icon" />
           </button>
           <button
             type="button"
             className="flex items-center justify-center px-4 py-3 bg-gray-100 rounded-full"
-            onClick={() => {}}
+            onClick={() => { }}
           >
             <img
               src={Icons.ChevronArrow}

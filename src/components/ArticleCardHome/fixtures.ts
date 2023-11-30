@@ -4,7 +4,7 @@ export const ArticleCardDefault: ArticleProps = {
   id: 1,
   title: "Default Title",
   text: "Default Text",
-  image: "/images/article.svg",
+  articleImage: "../../assets/image.jpg",
   author: "Default Author",
   date: "Default Date",
   onClick: () => {

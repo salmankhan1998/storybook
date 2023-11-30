@@ -93,7 +93,7 @@ const Form: React.FC<FormProps> = ({
             round="half"
             variant="contained"
             title="Save"
-            onClick={() => {
+            handleClick={() => {
               handleChange;
             }}
           />

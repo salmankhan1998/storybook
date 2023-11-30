@@ -31,7 +31,7 @@ export default function ArticlesSlider() {
             id={i}
             title={x.title}
             text={x.text}
-            image={x.imageURL}
+            articleImage={x.imageURL}
             author={x.author}
             date={x.date}
           />

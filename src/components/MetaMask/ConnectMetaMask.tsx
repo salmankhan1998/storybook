@@ -25,9 +25,9 @@ const ConnectMetaMask: React.FC<ConnectMetaMaskProps> = ({ onClick }) => {
             src={Images.Logo}
             alt="metamask logo"
             className="w-full h-full object-cover"
-            // width={139}
-            // height={128}
-            // objectFit="cover"
+          // width={139}
+          // height={128}
+          // objectFit="cover"
           />
         </div>
         <p className="text-base font-bold text-[#151515] mb-10 mt-4">
@@ -38,7 +38,7 @@ const ConnectMetaMask: React.FC<ConnectMetaMaskProps> = ({ onClick }) => {
           variant="contained"
           size="small"
           round="half"
-          onClick={onClick}
+          handleClick={() => { }}
         />
       </div>
     </div>

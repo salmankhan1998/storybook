@@ -57,7 +57,7 @@ const Navbar: React.FC<NavbarProps> = ({
               round="half"
               variant="contained"
               title="Connect Wallet"
-              onClick={handleLogin}
+              handleClick={() => { handleLogin }}
             />
           ) : (
             <div

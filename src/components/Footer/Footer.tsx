@@ -56,7 +56,7 @@ const Footer: React.FC<FooterProps> = ({
                 variant="secondary"
                 round="full"
                 size="medium"
-                onClick={() => {
+                handleClick={() => {
                   handleClick;
                 }}
               />
@@ -65,13 +65,13 @@ const Footer: React.FC<FooterProps> = ({
 
           <div className="flex space-x-2 justify-evenly md:space-x-4 ">
             <div className="flex items-center justify-center w-12 h-12 icons rounded-[30px] bg-black-500">
-              <Icon type="Twitter" icon="twitter" handleClick={() => {}} />
+              <Icon type="Twitter" icon="twitter" handleClick={() => { }} />
             </div>
             <div className="flex items-center justify-center w-12 h-12 icons rounded-[30px] bg-black-500">
-              <Icon type="LinkedIn" handleClick={() => {}} />
+              <Icon type="LinkedIn" handleClick={() => { }} />
             </div>
             <div className="flex items-center justify-center w-12 h-12 icons rounded-[30px] bg-black-500">
-              <Icon type="Discord" handleClick={() => {}} />
+              <Icon type="Discord" handleClick={() => { }} />
             </div>
           </div>
 

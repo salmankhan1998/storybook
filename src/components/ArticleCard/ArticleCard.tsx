@@ -1,3 +1,4 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 
@@ -152,7 +153,7 @@ const Card: React.FC<ArticleCardProps> = ({
               variant="green"
               title="Deep reading"
               arrow={true}
-              onClick={() => { }}
+            // handleClick={() => { }}
             />
           )}
           {horizontal && (

@@ -1,14 +1,15 @@
 import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
+import { ComponentStory, Meta, StoryObj } from "@storybook/react";
 import { ArticleCards } from "./fixtures";
 import ArticleCardComp, { ArticleCardProps } from "./index";
-export default {
+
+const meta = {
   title: "Components/Cards",
+  // tags: ['autodocs'],
   component: ArticleCardComp,
-} as Meta;
+} satisfies Meta<typeof ArticleCardComp>;
 
-const Template = (args: ArticleCardProps) => <ArticleCardComp {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const ArticleCard = Template.bind({});
-
-ArticleCard.args = ArticleCards;
+export const ArticleCard: Story = { args: ArticleCards }
