@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -43,16 +43,16 @@ const Card: React.FC<ArticleCardProps> = ({
   return (
     <div
       data-testid="Card"
-      className={`relative w-full rounded-xl bg-white px-[22px] py-8 ${horizontal ? "max-w-44 flex flex-row-reverse gap-20" : "max-w-21"
+      className={`relative  w-full rounded-xl bg-white px-[22px] py-8 shadow-md ${horizontal ? "max-w-44 flex flex-row-reverse gap-20" : "max-w-[358px]"
         } `}
     >
       <div>
         <div
           className={`${horizontal ? "w-[228px]" : "w-[304px]"} ${horizontal ? "h-[151px]" : "h-[204px]"
-            } rounded-lg overflow-hidden`}
+            } mx-auto rounded-lg overflow-hidden`}
         >
           <Image
-            src={cardImage ? cardImage : ''}
+            src={cardImage ? cardImage : ""}
             alt="card image"
             width={horizontal ? 228 : 304}
             height={horizontal ? 151 : 204}
@@ -128,7 +128,7 @@ const Card: React.FC<ArticleCardProps> = ({
           />
         )}
         <Typo
-          className={`text-gray-200 ${horizontal ? "max-w-[358px] my-3" : "my-2"
+          className={`text-gray-900 ${horizontal ? "max-w-[358px] my-3" : "my-2"
             }`}
           title={description}
           variant="p1"
@@ -138,7 +138,7 @@ const Card: React.FC<ArticleCardProps> = ({
           <div className="flex items-center my-2 p-2 space-x-2">
             <Avatar variant="small-avatar" radius="full" src={authorImage} />
             <Typo
-              className="text-[#475467]"
+              className="text-gray-950"
               fontWeight="bold"
               title={`${author} - ${date}`}
               variant="p2"

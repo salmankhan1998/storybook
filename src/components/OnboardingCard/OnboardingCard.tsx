@@ -3,23 +3,14 @@ import Typo from "../Typography/Typo";
 // import "./OnboardingCard.module.css";
 export interface OnboardingCardProps {
   title: "Create a passport" | "Collect badges" | "Enter new territories";
-  image:
-    | "/images/onboarding-passport.svg"
-    | "/images/badges.svg"
-    | "/images/territory.svg";
+  image: string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-const Images = {
-  passport: "",
-  badges: "",
-  territory: "",
-};
-
 const Onboarding: React.FC<OnboardingCardProps> = ({
   title,
-  onClick,
   image,
+  onClick,
 }) => {
   return (
     <div

@@ -31,7 +31,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       data-testid="Button"
       type="button"
-      className={`font-mukta w-max font-semibold mx-0 px-3 py-2 border-2 border-transparent ${variant} ${size} ${round} ${disabled && "cursor-not-allowed opacity-70"
+      className={`font-mukta w-max font-bold mx-0 px-3 py-2 border-2 border-transparent ${variant} ${size} ${round} ${disabled && "cursor-not-allowed opacity-70"
         } ${arrow ? "flex gap-4 items-center" : ""} ${cx(
           styles[`${variant}`],
           styles[`${size}`],
@@ -45,9 +45,5 @@ const Button: React.FC<ButtonProps> = ({
     </button>
   );
 };
-
-// export const PrimaryButton =({title}) => {
-// return <Button title={title} style="btn-primary medium" />
-// }
 
 export default Button;

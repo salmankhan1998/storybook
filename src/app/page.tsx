@@ -5,6 +5,16 @@ import DummyImage from '/assets/image.jpg'
 
 
 export default function Home() {
+  // const getData = async () => {
+  //   const res = await axios.get("https://api.ipify.org/?format=json");
+  //   console.log(res.data);
+  //   setIP(res.data.ip);
+  // };
+
+  // useEffect(() => {
+  //   //passing getData method to the lifecycle method
+  //   getData();
+  // }, []);
   return (
     <main className={styles.main}>
       <h1>This Project is design for specifically <strong>storybook</strong> integration</h1>

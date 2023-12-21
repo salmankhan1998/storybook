@@ -7,7 +7,8 @@ export const ArticleCards: ArticleCardProps = {
   time: "8",
   author: "Author",
   authorImage: "/images/accountAvatar.svg",
-  cardImage: "/images/card.svg",
+  cardImage:
+    "https://images.unsplash.com/photo-1682687982360-3fbab65f9d50?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   date: "date",
   horizontal: false,
   completed: false,
