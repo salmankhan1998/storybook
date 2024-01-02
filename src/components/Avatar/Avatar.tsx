@@ -1,19 +1,15 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import "./Avatar.module.css";
+import React from "react";
+import cx from "classnames";
+import styles from "./Avatar.module.css";
 export interface AvatartProps {
   src?: string;
   variant?:
-    | "small-avatar"
-    | "small-medium-avatar"
-    | "medium-avatar"
-    | "large-avatar";
+  | "small-avatar"
+  | "small-medium-avatar"
+  | "medium-avatar"
+  | "large-avatar";
   radius?: "half" | "full";
 }
-
-const Images = {
-  Avatar: "/images/accountAvatar.svg",
-};
 
 const Avatar: React.FC<AvatartProps> = ({ variant, src, radius }) => {
   let size: number = 0;
@@ -29,13 +25,14 @@ const Avatar: React.FC<AvatartProps> = ({ variant, src, radius }) => {
     size = 0;
   }
   return (
-    <div data-testid="avatar" className={`${variant} ${radius} `}>
-      <Image
-        src={src ? src : Images.Avatar}
+    <div data-testid="avatar" className={`overflow-hidden ${cx(
+      styles[`${variant}`],
+      styles[`${radius}`],
+    )} `}>
+      <img
+        src={src ? src : ''}
         alt="avatar"
-        width={size}
-        height={size}
-        objectFit="cover"
+        className="w-full h-full object-cover"
       />
     </div>
   );

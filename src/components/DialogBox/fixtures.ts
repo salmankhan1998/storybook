@@ -1,4 +1,4 @@
-import { DialogProps } from ".";
+// import { DialogProps } from ".";
 // import ConnectMetaMask from "../MetaMask/ConnectMetaMask";
 // import PassportModal from "../PassportModal/PassportModal";
 

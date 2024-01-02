@@ -1,59 +1,48 @@
 import React, { useState } from "react";
 import Typography from "../Typography/Typo";
-import "./Dropdown.module.css";
+import Styles from "./Dropdown.module.css";
 export interface DropdownProps {
-  title?: string;
-  isActive?: boolean;
-  setIsActive?: boolean;
-  selected?: string;
-  setSelected?: string;
-  options?: [];
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  options?: string[];
 }
 
 const images = {
   arrow: "/arrow.svg",
 };
+
 const Dropdown: React.FC<DropdownProps> = ({
-  title,
-  onClick,
-  isActive = false,
-  setIsActive,
-  selected,
-  setSelected,
   options,
 }) => {
+  const [expanded, setExpended] = useState<boolean>(false)
+  const [option, setOption] = useState<string>('Value 1')
   return (
     <div
       data-testid="Dropdown"
-      className="subcategory-field"
-      onClick={(e) => setIsActive(!isActive)}
+      className={Styles.subcategoryField}
+      onClick={(e) => setExpended(!expanded)}
     >
-      <div className="subcategory-menu" id="select-menu">
-        {/* <p id="select-text">{selected}</p> */}
+      <div className={Styles.subcategoryMenu} id="select-menu">
         <Typography
-          className="underline decoration-1 underline-offset-2 decoration-[#989696]"
+          // className="underline decoration-1 underline-offset-2 decoration-[]"
           fontWeight="medium"
-          title={selected}
+          title={option}
           variant="p2"
         />
         <img
           src={images.arrow}
-          className={`${
-            isActive
-              ? "transform rotate-180 transition duration-500 linear"
-              : ""
-          }`}
+          className={`${expanded
+            ? "transform rotate-180 transition duration-500 linear"
+            : ""
+            }`}
         />
       </div>
-      {isActive && (
+      {expanded && (
         <ul>
-          {options.map((option, index) => (
+          {options?.map((option, index) => (
             <li
               key={index}
               onClick={() => {
-                setSelected(option);
-                setIsActive(false);
+                setOption(option);
+                setExpended(false);
               }}
               className="options"
             >

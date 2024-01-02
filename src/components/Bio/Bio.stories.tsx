@@ -1,12 +1,20 @@
-import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { DefaultBio } from "./fixtures";
-import BioComp, { BioProps } from "./index";
+import BioComp from "./index";
 
-export default { title: "Components/Bio", component: BioComp } as Meta;
+const meta = {
+    title: 'Components/Bio',
+    component: BioComp,
+    parameters: {
+        // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+        // layout: 'centered',
+    },
+    tags: ['autodocs'],
+} satisfies Meta<typeof BioComp>;
 
-const Template = (args: BioProps) => <BioComp {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Bio = Template.bind({});
-
-Bio.args = DefaultBio;
+export const Default: Story = {
+    args: DefaultBio,
+};

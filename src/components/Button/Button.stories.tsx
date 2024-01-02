@@ -1,25 +1,32 @@
-import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
-import { Default, Primary, Secondary, Dark } from "./fixtures";
-import Buttons, { ButtonProps } from "./index";
-export default { title: "Components/Buttons", component: Buttons } as Meta;
+import type { Meta, StoryObj } from '@storybook/react';
+import { DefaultButton, PrimaryButton, SecondaryButton, DarkButton } from "./fixtures";
+import Buttons from "./index";
 
-const Template = (args: ButtonProps) => <Buttons {...args} />;
+const meta = {
+    title: 'Components/Buttons',
+    component: Buttons,
+    parameters: {
+        // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+        layout: 'centered',
+    },
+    tags: ['autodocs'],
+} satisfies Meta<typeof Buttons>;
 
-// Default.parameters = {
-//   design: [
-//     {
-//       type: "figma",
-//       url: "https://www.figma.com/file/QbXHsueVeudiT9NqDjZMgJ/T2-Design?node-id=192%3A16714",
-//     },
-//   ],
-// };
-export const Button = Template.bind({});
-// export const primary = Template.bind({})
-// export const secondary = Template.bind({})
-// export const dark = Template.bind({})
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-Button.args = Default;
-// primary.args = Primary;
-// secondary.args = Secondary;
-// dark.args = Dark;
+export const Default: Story = {
+    args: DefaultButton,
+};
+
+export const Primary: Story = {
+    args: PrimaryButton,
+};
+
+export const Secondary: Story = {
+    args: SecondaryButton,
+};
+
+export const Dark: Story = {
+    args: DarkButton,
+};

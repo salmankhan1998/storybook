@@ -40,6 +40,7 @@ const Card: React.FC<ArticleCardProps> = ({
   avatars,
   onClick,
 }) => {
+  const avatarSize = horizontal ? "large-avatar" : "small-medium-avatar";
   return (
     <div
       data-testid="Card"
@@ -104,7 +105,7 @@ const Card: React.FC<ArticleCardProps> = ({
         <div className="flex items-center justify-between py-4">
           <Pill variant={pillVariant} title={pillTitle} />
           <Typo
-            className="uppercase underline"
+            className="uppercase underline cursor-pointer"
             fontWeight="normal"
             title="TL;DR"
             variant="p1"
@@ -136,7 +137,7 @@ const Card: React.FC<ArticleCardProps> = ({
         />
         {!horizontal && (
           <div className="flex items-center my-2 p-2 space-x-2">
-            <Avatar variant="small-avatar" radius="full" src={authorImage} />
+            <Avatar src={authorImage} variant={avatarSize} radius="full" />
             <Typo
               className="text-gray-950"
               fontWeight="bold"
@@ -145,7 +146,7 @@ const Card: React.FC<ArticleCardProps> = ({
             />
           </div>
         )}
-        <div className={`${horizontal ? "flex space-x-6" : ""}`}>
+        <div className={`${horizontal ? "flex space-x-6 items-center" : ""}`}>
           {!completed && (
             <Button
               size="small"

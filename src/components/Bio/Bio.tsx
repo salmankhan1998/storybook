@@ -6,7 +6,7 @@ export interface BioProps {
   setBio: (val: string) => void;
 }
 
-const Input: React.FC<BioProps> = ({ label, bio, setBio }) => {
+const BioTextField: React.FC<BioProps> = ({ label, bio, setBio }) => {
   return (
     <>
       <label
@@ -20,7 +20,8 @@ const Input: React.FC<BioProps> = ({ label, bio, setBio }) => {
         className="appearance-none border border-gray-500 rounded w-full py-3.5 px-4 text-black-900 leading-tight focus:outline-none focus:shadow-outline"
         id="bio"
         rows={5}
-        value={bio}
+        // value={bio}
+        placeholder="Enter text!"
         onChange={(e) => {
           setBio(e.target.value);
         }}
@@ -29,4 +30,4 @@ const Input: React.FC<BioProps> = ({ label, bio, setBio }) => {
   );
 };
 
-export default Input;
+export default BioTextField;

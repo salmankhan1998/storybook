@@ -14,13 +14,9 @@
 }
 
 .half {
-  @apply rounded;
+  @apply rounded-lg;
 }
 
 .full {
   @apply rounded-full;
 }
-/* 
-. {
-  @apply border-[1.5px] border-white-900;
-} */

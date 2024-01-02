@@ -1,13 +1,20 @@
-import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { DefaultAvatar } from "./fixtures";
 import AvatarComp, { AvatartProps } from "./index";
-import { StayPrimaryLandscape } from "@mui/icons-material";
-// import { pink, purple, yellow } from "@mui/material/colors";
-export default { title: "Components/Avatar", component: AvatarComp } as Meta;
 
-const Template = (args: AvatartProps) => <AvatarComp {...args} />;
+const meta = {
+    title: 'Components/Avatar',
+    component: AvatarComp,
+    parameters: {
+        // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+        layout: 'centered',
+    },
+    tags: ['autodocs'],
+} satisfies Meta<typeof AvatarComp>;
 
-export const Avatar = Template.bind({});
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-Avatar.args = DefaultAvatar;
+export const Avatar: Story = {
+    args: DefaultAvatar,
+};

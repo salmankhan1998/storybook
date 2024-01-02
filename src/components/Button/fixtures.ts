@@ -1,39 +1,38 @@
 import { ButtonProps } from ".";
-import styles from "./Button.module.css";
 
-export const Default: ButtonProps = {
+export const DefaultButton: ButtonProps = {
   title: "Default Button",
   variant: "contained",
   size: "small",
   round: "half",
-  onClick: () => {
-    console.log("Btn onClick !");
+  handleClick: () => {
+    console.log("Button clicked!");
   },
 };
 
-export const Primary: ButtonProps = {
+export const PrimaryButton: ButtonProps = {
   title: "Primary",
   variant: "primary",
   size: "medium",
-  onClick: () => {
-    console.log("Btn onClick !");
+  handleClick: () => {
+    console.log("Button clicked!");
   },
 };
 
-export const Secondary: ButtonProps = {
+export const SecondaryButton: ButtonProps = {
   title: "Secondary Button",
   variant: "secondary",
   size: "small",
-  onClick: () => {
-    console.log("Btn onClick !");
+  handleClick: () => {
+    console.log("Button clicked!");
   },
 };
 
-export const Dark: ButtonProps = {
+export const DarkButton: ButtonProps = {
   title: "Dark Button",
   variant: "dark",
   size: "small",
-  onClick: () => {
-    console.log("Btn onClick !");
+  handleClick: () => {
+    console.log("Button clicked!");
   },
 };

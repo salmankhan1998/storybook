@@ -1,4 +1,4 @@
-.subcategory-field {
+.subcategoryField {
   width: max-content;
   position: relative;
   z-index: 5;
@@ -6,18 +6,20 @@
   padding: 0 5px;
 }
 
-.subcategory-field .subcategory-menu {
+.subcategoryField .subcategoryMenu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 7px;
-  border-radius: 5px 8px 8px 5px;
+  border-radius: 8px;
   cursor: pointer;
   height: 24px;
-  gap: 5px;
+  gap: 10px;
+  padding: 5px 8px;
+  border: 1px solid #000000;
 }
 
-.subcategory-field .subcategory-menu #select-text {
+.subcategoryField .subcategoryMenu #selectText {
   font-family: "Mukta";
   font-style: normal;
   font-weight: 300;
@@ -27,16 +29,17 @@
   color: #000000;
 }
 
-.subcategory-field ul {
-  padding-top: 5px;
+.subcategoryField ul {
+  margin-top: 5px;
   position: absolute;
   width: 100%;
   background: #fff;
   list-style: none;
-  box-shadow: 1px 1px 5px 1px #f5fbf7;
+  border-radius: 3px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
-.subcategory-field ul li {
+.subcategoryField ul li {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
@@ -46,7 +49,7 @@
   color: #000000;
 }
 
-.subcategory-field ul li:hover {
+.subcategoryField ul li:hover {
   background-color: #27303e;
   color: #f5fbf7;
   border-radius: 3px;

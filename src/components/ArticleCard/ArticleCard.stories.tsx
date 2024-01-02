@@ -4,8 +4,8 @@ import { ArticleCards } from "./fixtures";
 import ArticleCardComp, { ArticleCardProps } from "./index";
 
 const meta = {
-  title: "Components/Cards",
-  // tags: ['autodocs'],
+  title: "Components/Cards/Article",
+  tags: ['autodocs'],
   component: ArticleCardComp,
 } satisfies Meta<typeof ArticleCardComp>;
 

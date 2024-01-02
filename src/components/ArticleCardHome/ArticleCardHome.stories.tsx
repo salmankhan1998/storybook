@@ -3,8 +3,8 @@ import { ArticleCardDefault } from "./fixtures";
 import ArticleCardHomeComp from "./index";
 
 const meta = {
-  title: "Components/Cards",
-  // tags: ['autodocs'],
+  title: "Components/Cards/ArticleHome",
+  tags: ['autodocs'],
   component: ArticleCardHomeComp,
 } satisfies Meta<typeof ArticleCardHomeComp>;
 

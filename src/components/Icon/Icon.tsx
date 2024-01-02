@@ -9,10 +9,10 @@ export interface IconProps {
 }
 
 const Icon: React.FC<IconProps> = ({ type, handleClick }) => {
-  const IconComponent = Icons[type];
+  const IconComponent = Icons[type]
 
   return (
-    <div data-testid="Icon" onClick={handleClick}>
+    <div data-testid="Icon" className="cursor-pointer" onClick={handleClick}>
       <IconComponent />
     </div>
   );

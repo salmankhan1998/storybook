@@ -1,15 +1,20 @@
-import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { DefaultBadge } from "./fixtures";
-import BadgeComp, { BadgeProps } from "./index";
+import BadgeComp from "./index";
 
-export default {
-  title: "Components/Badge",
+const meta = {
+  title: 'Components/Badge',
   component: BadgeComp,
-} as Meta;
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+} satisfies Meta<typeof BadgeComp>;
 
-const Template = (args: BadgeProps) => <BadgeComp {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-export const Badge = Template.bind({});
-
-Badge.args = DefaultBadge;
+export const Badge: Story = {
+  args: DefaultBadge,
+};

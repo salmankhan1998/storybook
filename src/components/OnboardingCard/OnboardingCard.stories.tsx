@@ -4,8 +4,8 @@ import { OnboardingCards } from "./fixtures";
 import OnboardingCardComp from "./index";
 
 const meta = {
-  title: "Components/Cards",
-  // tags: ['autodocs'],
+  title: "Components/Cards/Onboarding",
+  tags: ['autodocs'],
   component: OnboardingCardComp,
 } satisfies Meta<typeof OnboardingCardComp>;
 

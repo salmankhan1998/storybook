@@ -7,7 +7,7 @@ export interface BadgeProps {
   userName?: string;
   description?: string;
   pillTitle?: string;
-  imageUrl?: string;
+  imageUrl: string;
 }
 
 const Badge: React.FC<BadgeProps> = ({
@@ -19,10 +19,10 @@ const Badge: React.FC<BadgeProps> = ({
   return (
     <div
       data-testid="badge"
-      className="w-full max-w-15 py-5 px-8 !bg-white rounded-xl"
+      className="w-full max-w-15 py-5 px-8 !bg-white rounded-xl shadow-md"
     >
       <div className="w-[187px] h-[142px] rounded-lg overflow-hidden mb-3.5">
-        <Image src={imageUrl} width={187} height={142} />
+        <img src={imageUrl} alt="badge" className="w-full h-full object-cover" />
       </div>
       <Pill title={pillTitle} variant="pink" />
       <Typography

@@ -47,24 +47,21 @@ const Passport: React.FC<PassportProps> = ({
   return (
     <div
       data-testid="Passport"
-      className={`w-full ${
-        userManagement
+      className={`w-full ${userManagement
           ? "max-w-[365px] pt-[15px] px-[24px] pb-[22px]"
           : "max-w-[604px] pt-[40px] px-[45px] pb-[36px]"
-      } bg-white-900 rounded-2xl shadow-md `}
+        } bg-white-900 rounded-2xl shadow-md `}
     >
       <div
-        className={`flex justify-between ${
-          userManagement ? "flex-col" : "flex-row"
-        }`}
+        className={`flex justify-between ${userManagement ? "flex-col" : "flex-row"
+          }`}
       >
         <div className="flex space-x-9">
           <div
-            className={` flex-shrink-0 ${
-              userManagement
+            className={` flex-shrink-0 ${userManagement
                 ? "w-[88px] h-[88px] rounded-full"
                 : "w-[119px] h-[119px] rounded-xl"
-            } overflow-hidden`}
+              } overflow-hidden`}
           >
             <Image
               src={Images.passport}
@@ -75,25 +72,22 @@ const Passport: React.FC<PassportProps> = ({
             />
           </div>
           <div
-            className={`mb-8 ${
-              userManagement ? "w-full flex justify-between !mt-4" : ""
-            } ${isIterable ? "" : "mt-8"}`}
+            className={`mb-8 ${userManagement ? "w-full flex justify-between !mt-4" : ""
+              } ${isIterable ? "" : "mt-8"}`}
           >
             <div>
               {!isIterable && (
                 <>
                   <Typo
-                    className={`${
-                      userManagement ? "!text-black-900" : "!text-black-800"
-                    } mb-2.5 !leading-[17px]`}
+                    className={`${userManagement ? "!text-black-900" : "!text-black-800"
+                      } mb-2.5 !leading-[17px]`}
                     title="User handle"
                     variant="p1"
                     fontWeight="normal"
                   />
                   <Typo
-                    className={`${
-                      userManagement ? "!text-[#807E7E]" : "!text-[#AA9898]"
-                    } !leading-[17px] mb-2.5`}
+                    className={`${userManagement ? "!text-[#807E7E]" : "!text-[#AA9898]"
+                      } !leading-[17px] mb-2.5`}
                     title="@twitter"
                     variant="p2"
                     fontWeight="normal"
@@ -121,11 +115,10 @@ const Passport: React.FC<PassportProps> = ({
               )}
 
               <p
-                className={`font-mukta text-sm font-normal  ${
-                  userManagement
+                className={`font-mukta text-sm font-normal  ${userManagement
                     ? "text-black-800 text-center leading-[17px] rounded-sm py-[3.5px] bg-green-500"
                     : "text-blue-900 leading-[20px]"
-                } mt-3`}
+                  } mt-3`}
               >
                 {user ? user : "Alpha user"}
               </p>
@@ -152,25 +145,20 @@ const Passport: React.FC<PassportProps> = ({
             {userManagement && (
               <div className="flex flex-col justify-between">
                 <div className="text-[#989696] ml-auto">
-                  <Icon handleClick={() => {}} type="Edit" />
+                  <Icon handleClick={() => { }} type="Edit" />
                 </div>
                 <Dropdown
-                  onClick={() => {}}
                   options={["value 1", "value2"]}
-                  selected="Bio"
-                  setSelected=""
-                  title="Default Button"
                 />
               </div>
             )}
           </div>
         </div>
         <div
-          className={`${
-            userManagement
+          className={`${userManagement
               ? "flex flex-row-reverse justify-between items-end"
               : ""
-          }`}
+            }`}
         >
           <div className="flex items-baseline justify-end space-x-2">
             <Typo

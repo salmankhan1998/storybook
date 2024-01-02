@@ -1,23 +1,22 @@
-import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { DefaultDropdown } from "./fixtures";
-import CustomDropdown, { DropdownProps } from "./index";
-import { StayPrimaryLandscape } from "@mui/icons-material";
-export default {
-  title: "Components/Dropdown",
+import CustomDropdown from "./index";
+
+
+const meta = {
+  title: 'Components/Dropdown',
   component: CustomDropdown,
-} as Meta;
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/react/configure/story-layout
+    // layout: 'centered',
+  },
+  tags: ['autodocs'],
+} satisfies Meta<typeof CustomDropdown>;
 
-const Template = (args: DropdownProps) => <CustomDropdown {...args} />;
+export default meta;
+type Story = StoryObj<typeof meta>;
 
-// Default.parameters = {
-//   design: [
-//     {
-//       type: "figma",
-//       url: "https://www.figma.com/file/QbXHsueVeudiT9NqDjZMgJ/T2-Design?node-id=192%3A16714",
-//     },
-//   ],
-// };
-export const Dropdown = Template.bind({});
+export const Dropdown: Story = {
+  args: DefaultDropdown,
+};
 
-Dropdown.args = DefaultDropdown;
