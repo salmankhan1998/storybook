@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Icon.module.css";
 import * as Icons from "../Icons";
 
 export interface IconProps {
   type?: string;
-  icon?: string;
   handleClick?: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
 

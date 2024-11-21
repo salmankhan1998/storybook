@@ -18,6 +18,8 @@ import {
   HourglassIcon,
   TextSizeIcon,
   EditIcon,
+  ChevronRightIcon,
+  FooterLogoIcon
 } from "./fixtures";
 import IconComp, { IconProps } from "./index";
 export default { title: "Components/Icons", component: IconComp } as Meta;
@@ -41,6 +43,9 @@ export const Compress = Template.bind({});
 export const Hourglass = Template.bind({});
 export const TextSize = Template.bind({});
 export const Edit = Template.bind({});
+export const ChevronRight = Template.bind({});
+export const FooterLogo = Template.bind({});
+
 
 Wallet.args = WalletIcon;
 Book.args = BookIcon;
@@ -59,3 +64,5 @@ Compress.args = CompressIcon;
 Hourglass.args = HourglassIcon;
 TextSize.args = TextSizeIcon;
 Edit.args = EditIcon;
+ChevronRight.args = ChevronRightIcon;
+FooterLogo.args = FooterLogoIcon

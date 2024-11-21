@@ -14,7 +14,7 @@ export interface FooterProps {
 }
 
 const Images = {
-  Logo: "/images/bottom-bar.svg",
+  Logo: "/public/t2-logo.svg",
 };
 
 const Footer: React.FC<FooterProps> = ({
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({
 
           <div className="flex space-x-2 justify-evenly md:space-x-4 ">
             <div className="flex items-center justify-center w-12 h-12 icons rounded-[30px] bg-black-500">
-              <Icon type="Twitter" icon="twitter" handleClick={() => { }} />
+              <Icon type="Twitter" handleClick={() => { }} />
             </div>
             <div className="flex items-center justify-center w-12 h-12 icons rounded-[30px] bg-black-500">
               <Icon type="LinkedIn" handleClick={() => { }} />

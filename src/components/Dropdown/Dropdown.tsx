@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Typography from "../Typography/Typo";
 import Styles from "./Dropdown.module.css";
+import Icon from "../Icon";
 export interface DropdownProps {
   options?: string[];
 }
@@ -22,18 +23,16 @@ const Dropdown: React.FC<DropdownProps> = ({
     >
       <div className={Styles.subcategoryMenu} id="select-menu">
         <Typography
-          // className="underline decoration-1 underline-offset-2 decoration-[]"
+          className="whitespace-nowrap overflow-clip"
           fontWeight="medium"
           title={option}
           variant="p2"
         />
-        <img
-          src={images.arrow}
-          className={`${expanded
-            ? "transform rotate-180 transition duration-500 linear"
-            : ""
-            }`}
-        />
+        <div
+          className={`transition transform duration-500 linear ${expanded ? "rotate-90 " : ""}`}
+        >
+          <Icon type="ChevronRight" />
+        </div>
       </div>
       {expanded && (
         <ul>

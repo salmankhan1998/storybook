@@ -117,3 +117,17 @@ export const EditIcon: IconProps = {
     console.log("clicked");
   },
 };
+
+export const ChevronRightIcon: IconProps = {
+  type: "ChevronRight",
+  handleClick: () => {
+    console.log("clicked");
+  },
+};
+
+export const FooterLogoIcon: IconProps = {
+  type: "FooterLogo",
+  handleClick: () => {
+    console.log("clicked");
+  },
+};

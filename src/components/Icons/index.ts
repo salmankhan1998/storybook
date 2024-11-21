@@ -15,3 +15,5 @@ export { default as Compress } from "./compress";
 export { default as Hourglass } from "./hourglass";
 export { default as TextSize } from "./text-size";
 export { default as Edit } from "./edit";
+export { default as ChevronRight } from "./chevron-right";
+export { default as FooterLogo } from "./t2-footer-logo";
