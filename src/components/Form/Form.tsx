@@ -10,9 +10,9 @@ export interface FormProps {
   name?: string;
   twitter?: string;
   bio?: string;
-  setName?: string;
-  setTwitter?: string;
-  setBio?: string;
+  setName?: (e: any) => void;
+  setTwitter?: (e: any) => void;
+  setBio?: (e: any) => void;
   handleChange?: (event: React.FormEvent<HTMLInputElement>) => void;
 }
 
@@ -52,7 +52,7 @@ const Form: React.FC<FormProps> = ({
               value={name}
               placeholder="Natalia"
               onChange={(e) => {
-                setName(e.target.value);
+                setName && setName(e.currentTarget.value);
               }}
             />
           </div>
@@ -64,7 +64,7 @@ const Form: React.FC<FormProps> = ({
               value={twitter}
               placeholder="@nataliap"
               onChange={(e) => {
-                setTwitter(e.target.value);
+                setTwitter && setTwitter(e.currentTarget.value);
               }}
             />
           </div>
@@ -81,7 +81,7 @@ const Form: React.FC<FormProps> = ({
               rows={5}
               value={bio}
               onChange={(e) => {
-                setBio(e.target.value);
+                setBio && setBio(e.target.value);
               }}
             />
           </div>

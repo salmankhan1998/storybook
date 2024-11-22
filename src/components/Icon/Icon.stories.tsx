@@ -1,68 +1,140 @@
 import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
-import {
-  BookIcon,
-  BookOpenIcon,
-  SettingIcon,
-  BookmarkIcon,
-  FeatherIcon,
-  DiscordIcon,
-  LinkedInIcon,
-  TwitterIcon,
-  ArrowRightIcon,
-  ArrowLeftIcon,
-  ArrowDownIcon,
-  CrossIcon,
-  WalletIcon,
-  CompressIcon,
-  HourglassIcon,
-  TextSizeIcon,
-  EditIcon,
-  ChevronRightIcon,
-  FooterLogoIcon
-} from "./fixtures";
-import IconComp, { IconProps } from "./index";
+import { Meta } from "@storybook/react";
+import IconComp from "./index";
+
 export default { title: "Components/Icons", component: IconComp } as Meta;
 
-const Template = (args: IconProps) => <IconComp {...args} />;
+export const Wallet = () => (
+  <IconComp
+    type="Wallet"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Book = () => (
+  <IconComp
+    type="Book"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const BookOpen = () => (
+  <IconComp
+    type="BookOpenIcon"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Bookmark = () => (
+  <IconComp
+    type="Bookmark"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Discord = () => (
+  <IconComp
+    type="Discord"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Feather = () => (
+  <IconComp
+    type="Feather"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const LinkedIn = () => (
+  <IconComp
+    type="LinkedIn"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Setting = () => (
+  <IconComp
+    type="Setting"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Twitter = () => (
+  <IconComp
+    type="Twitter"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const ArrowRight = () => (
+  <IconComp
+    type="ArrowRight"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const ArrowDown = () => (
+  <IconComp
+    type="ArrowDown"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const ArrowLeft = () => (
+  <IconComp
+    type="ArrowLeft"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Cross = () => (
+  <IconComp
+    type="Cross"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Compress = () => (
+  <IconComp
+    type="Compress"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Hourglass = () => (
+  <IconComp
+    type="Hourglass"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const TextSize = () => (
+  <IconComp
+    type="TextSize"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const Edit = () => (
+  <IconComp
+    type="Edit"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const ChevronRight = () => (
+  <IconComp
+    type="ChevronRight"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
+export const FooterLogo = () => (
+  <IconComp
+    type="FooterLogo"
+    handleClick={() => {
+      console.log("clicked");
+    }} />
+)
 
-export const Wallet = Template.bind({});
-export const Book = Template.bind({});
-export const BookOpen = Template.bind({});
-export const Bookmark = Template.bind({});
-export const Discord = Template.bind({});
-export const Feather = Template.bind({});
-export const LinkedIn = Template.bind({});
-export const Setting = Template.bind({});
-export const Twitter = Template.bind({});
-export const ArrowRight = Template.bind({});
-export const ArrowDown = Template.bind({});
-export const ArrowLeft = Template.bind({});
-export const Cross = Template.bind({});
-export const Compress = Template.bind({});
-export const Hourglass = Template.bind({});
-export const TextSize = Template.bind({});
-export const Edit = Template.bind({});
-export const ChevronRight = Template.bind({});
-export const FooterLogo = Template.bind({});
-
-
-Wallet.args = WalletIcon;
-Book.args = BookIcon;
-BookOpen.args = BookOpenIcon;
-Setting.args = SettingIcon;
-Bookmark.args = BookmarkIcon;
-Feather.args = FeatherIcon;
-Discord.args = DiscordIcon;
-LinkedIn.args = LinkedInIcon;
-Twitter.args = TwitterIcon;
-ArrowRight.args = ArrowRightIcon;
-ArrowLeft.args = ArrowLeftIcon;
-ArrowDown.args = ArrowDownIcon;
-Cross.args = CrossIcon;
-Compress.args = CompressIcon;
-Hourglass.args = HourglassIcon;
-TextSize.args = TextSizeIcon;
-Edit.args = EditIcon;
-ChevronRight.args = ChevronRightIcon;
-FooterLogo.args = FooterLogoIcon

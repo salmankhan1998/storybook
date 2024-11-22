@@ -5,7 +5,7 @@ export const DefaultInput: InputProps = {
   type: "text",
   id: "name",
   placeholder: "Natalia",
-  handleChange: () => {
+  onChange: () => {
     console.log("input changed");
   },
 };

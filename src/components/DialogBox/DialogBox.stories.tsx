@@ -1,9 +1,9 @@
 import React from "react";
 import ConnectMetaMask from "../MetaMask/ConnectMetaMask";
 import PassportComp from "../Passport/Passport";
-import { ComponentStory, Meta } from "@storybook/react";
+import { Meta } from "@storybook/react";
 // import {  passport } from "./fixtures";
-import DialogBox, { DialogProps } from "./DialogBox";
+import DialogBox from "./DialogBox";
 
 export default { title: "Components/DialogBox", component: DialogBox } as Meta;
 
@@ -24,7 +24,6 @@ export const Passport = () => (
     <PassportComp
       user="Alpha user"
       name="Natalia"
-      pillTitle="Bookworm Valley"
       onClick={() => {
         console.log("clicked");
       }}
