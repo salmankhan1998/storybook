@@ -1,6 +1,5 @@
 import React from "react";
-import { ComponentStory, Meta } from "@storybook/react";
-import { DefaultNotifications } from "./fixtures";
+import { Meta } from "@storybook/react";
 import TerritoryComp, { NotificationsProps } from "./index";
 
 export default {
@@ -8,8 +7,12 @@ export default {
   component: TerritoryComp,
 } as Meta;
 
-const Template = (args: NotificationsProps) => <TerritoryComp {...args} />;
-
-export const Notifications = Template.bind({});
-
-Notifications.args = DefaultNotifications;
+export const Notifications = () => (
+  <TerritoryComp
+    data={[
+      { id: 1, title: "Lorem ipsum dolor sit amet..." },
+      { id: 2, title: "Lorem ipsum dolor sit amet..." },
+      { id: 2, title: "Lorem ipsum dolor sit amet..." },
+      { id: 2, title: "Lorem ipsum dolor sit amet..." },
+    ]} />
+)
