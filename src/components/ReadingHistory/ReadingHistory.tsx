@@ -1,10 +1,16 @@
-import { dividerClasses } from "@mui/material";
 import React from "react";
 import Typography from "../Typography/Typo";
-import Territory from "../TerritoryItem/TerritoryItem";
+import Territory, { Variants } from "../TerritoryItem/TerritoryItem";
 
+type ReadingHistory = {
+  id: number,
+  title: string,
+  territoryName: string,
+  territoryType: Variants,
+  value: string,
+}
 export interface ReadingHistoryProps {
-  histroy?: Array<object>;
+  histroy?: ReadingHistory[];
 }
 
 const ReadingHistory: React.FC<ReadingHistoryProps> = ({ histroy }) => {
@@ -26,7 +32,7 @@ const ReadingHistory: React.FC<ReadingHistoryProps> = ({ histroy }) => {
               <Typography
                 className="!text-black-900"
                 fontWeight="medium"
-                title={item.id}
+                title={String(item.id)}
                 variant="p2"
               />
               <div className="">

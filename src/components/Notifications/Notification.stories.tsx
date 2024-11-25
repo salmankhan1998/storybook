@@ -9,7 +9,7 @@ export default {
 
 export const Notifications = () => (
   <TerritoryComp
-    data={[
+    notifications={[
       { id: 1, title: "Lorem ipsum dolor sit amet..." },
       { id: 2, title: "Lorem ipsum dolor sit amet..." },
       { id: 2, title: "Lorem ipsum dolor sit amet..." },
