@@ -1,4 +1,3 @@
-import { ImportExport } from "@mui/icons-material";
 import React from "react";
 import Notifications from "../Notifications/Notification";
 import TerritoryList from "../TerritoryList/TerritoryList";
@@ -7,7 +6,7 @@ export interface UserNavBarProps {
   data?: Array<object>;
 }
 
-const UserSideNav: React.FC<UserNavBarProps> = ({ data }) => {
+const UserSideNav: React.FC<UserNavBarProps> = () => {
   const notification = [
     {
       id: 1,
@@ -28,7 +27,7 @@ const UserSideNav: React.FC<UserNavBarProps> = ({ data }) => {
         <TerritoryList title="Territories" />
       </div>
       <div className="pt-8">
-        <Notifications data={notification} />
+        <Notifications notifications={notification} />
       </div>
     </div>
   );

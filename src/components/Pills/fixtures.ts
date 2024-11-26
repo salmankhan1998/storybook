@@ -1,20 +1,20 @@
 import { PillProps } from ".";
 
-export const Blue: PillProps = {
+export const BlueVariant: PillProps = {
   title: "t2 world",
   variant: "blue",
 };
-export const Yellow: PillProps = {
+export const YellowVariant: PillProps = {
   title: "Bookworm Valley",
   variant: "yellow",
 };
 
-export const Purple: PillProps = {
+export const PurpleVariant: PillProps = {
   title: "Spoon River",
   variant: "purple",
 };
 
-export const Pink: PillProps = {
+export const PinkVariant: PillProps = {
   title: "Time pink",
   variant: "pink",
 };

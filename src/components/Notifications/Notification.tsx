@@ -1,12 +1,16 @@
 import React from "react";
 import Typography from "../Typography/Typo";
 
+export type Notification = {
+  id?: string | number,
+  title?: string
+}
 export interface NotificationsProps {
-  data?: Array<object>;
+  notifications?: Notification[];
 }
 
 const Notifications: React.FC<NotificationsProps> = ({
-  data,
+  notifications,
 }: NotificationsProps) => {
   return (
     <div
@@ -20,7 +24,7 @@ const Notifications: React.FC<NotificationsProps> = ({
         variant="p2"
       />
       <div className="mt-4 divide-y divide-[#CFD4DB]">
-        {data?.map((val, index) => (
+        {notifications?.map((val, index) => (
           <div key={index} className="flex space-x-2  py-3">
             <div className="w-1 h-1 bg-red-800 rounded-full"></div>
             <Typography

@@ -3,19 +3,19 @@ import Typography from "../Typography/Typo";
 import styles from "./TerritoryItem.module.css";
 import cx from "classnames";
 
+export type Variants = "blue" | "yellow" | "pink" | "purple" | "green"
 export interface TerritoryProps {
   title?: string;
   size?: "small-circle" | "medium-circle";
-  variant?: "blue" | "yellow" | "pink" | "purple" | "green";
+  variant?: Variants;
 }
 
 const TerritoryItem: React.FC<TerritoryProps> = ({ title, size, variant }) => {
   return (
     <div
       data-testid="territory-item"
-      className={`flex items-center ${
-        size === "small-circle" ? "space-x-1" : "space-x-6"
-      }`}
+      className={`flex items-center ${size === "small-circle" ? "space-x-1" : "space-x-6"
+        }`}
     >
       <div
         className={`rounded-full ${size} ${variant} ${cx(
