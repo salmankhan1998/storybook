@@ -6,10 +6,6 @@ export interface DropdownProps {
   options?: string[];
 }
 
-const images = {
-  arrow: "/arrow.svg",
-};
-
 const Dropdown: React.FC<DropdownProps> = ({
   options,
 }) => {
@@ -19,7 +15,7 @@ const Dropdown: React.FC<DropdownProps> = ({
     <div
       data-testid="Dropdown"
       className={Styles.subcategoryField}
-      onClick={(e) => setExpended(!expanded)}
+      onClick={() => setExpended(!expanded)}
     >
       <div className={Styles.subcategoryMenu} id="select-menu">
         <Typography
