@@ -1,7 +1,6 @@
-import React from "react";
-import { ComponentStory, Meta, StoryObj } from "@storybook/react";
+import { Meta, StoryObj } from "@storybook/react";
 import { ArticleCards } from "./fixtures";
-import ArticleCardComp, { ArticleCardProps } from "./index";
+import ArticleCardComp from "./index";
 
 const meta = {
   title: "Components/Cards/Article",

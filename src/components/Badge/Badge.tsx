@@ -21,7 +21,7 @@ const Badge: React.FC<BadgeProps> = ({
       data-testid="badge"
       className="w-full max-w-15 py-5 px-8 !bg-white rounded-xl shadow-md"
     >
-      <div className="w-[187px] h-[142px] rounded-lg overflow-hidden mb-3.5">
+      <div className="w-full max-w-15 h-[142px] rounded-lg overflow-hidden mb-3.5">
         <img src={imageUrl} alt="badge" className="w-full h-full object-cover" />
       </div>
       <Pill title={pillTitle} variant="pink" />

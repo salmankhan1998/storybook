@@ -3,6 +3,7 @@ import Typo from "../Typography/Typo";
 import Button from "../Button/Button";
 import Pill from "../Pills/Pill";
 import Image from "next/image";
+import Icon from "../Icon";
 
 export interface ArticleProps {
   id: number;
@@ -73,21 +74,17 @@ export default function ArticleCard({
         <div className="flex flex-row gap-x-3">
           <button
             type="button"
-            className="flex items-center px-4 py-3 bg-gray-100 rounded-full"
+            className="flex items-center px-3 py-2 bg-gray-100 rounded-full"
             onClick={() => { }}
           >
-            <img src={Icons.ChevronArrow} alt="arrow left icon" />
+            <Icon type="ArrowLeft" />
           </button>
           <button
             type="button"
-            className="flex items-center justify-center px-4 py-3 bg-gray-100 rounded-full"
+            className="flex items-center justify-center px-3 py-2 bg-gray-100 rounded-full rotate-180"
             onClick={() => { }}
           >
-            <img
-              src={Icons.ChevronArrow}
-              alt="arrow left icon"
-              className="rotate-180 "
-            />
+            <Icon type="ArrowLeft" />
           </button>
         </div>
       </div>

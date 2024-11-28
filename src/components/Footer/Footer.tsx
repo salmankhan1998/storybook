@@ -14,7 +14,7 @@ export interface FooterProps {
 }
 
 const Images = {
-  Logo: "/public/t2-logo.svg",
+  Logo: "/t2-logo.svg",
 };
 
 const Footer: React.FC<FooterProps> = ({
