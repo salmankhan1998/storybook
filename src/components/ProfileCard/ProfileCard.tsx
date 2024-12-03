@@ -19,7 +19,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ address }) => {
     <div
       data-testid="ProfileCard"
       ref={ref}
-      className="absolute px-6 py-4 bg-white-900 top-0 right-10 rounded-3xl"
+      className="absolute px-6 py-4 bg-white-900 top-0 right-10 border rounded-3xl"
     >
       <Typo
         className="!text-black-800 !leading-3 mb-2.5"

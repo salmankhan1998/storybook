@@ -3,7 +3,7 @@
 }
 
 .medium-avatar {
-  @apply w-[45px] h-[46px] object-cover;
+  @apply w-[40px] h-[40px] object-cover;
 }
 
 .small-medium-avatar {

@@ -3,6 +3,7 @@ import Button from "../Button";
 import Icon from "../Icon/Icon";
 import "./Navbar.module.css";
 import Container from "../Container/Container";
+import Avatar from "../Avatar";
 export interface NavbarProps {
   loggedIn?: boolean;
   username?: string;
@@ -11,12 +12,12 @@ export interface NavbarProps {
 }
 
 const Images = {
-  Logo: "/images/t2-logo.svg",
+  Logo: "/t2-logo.svg",
   Avatar: "/images/accountAvatar.svg",
 };
 
 const Navbar: React.FC<NavbarProps> = ({
-  loggedIn,
+  loggedIn = true,
   handleLogin,
   handleWallet,
 }) => {
@@ -32,17 +33,15 @@ const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         <div className="flex w-[140rem] items-center justify-end border-l  border-[#CFD4DB]  h-[48px] mx-7">
-          {/* {loggedIn && passport?.total > 0 && (
-            <div className={`pr-4 pt-3`}>{passport?.username}</div>
-          )} */}
           <div className={``}>
             {loggedIn && (
               <div className="relative w-[36px] h-[36px]">
-                <img
-                  src={Images.Avatar}
-                  className="absolute object-cover w-full h-full -z-10"
+                <Avatar
+                  radius="full"
+                  src="https://images.unsplash.com/photo-1670918346745-248c1a10b79d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  variant="medium-avatar"
                 />
-                <div className="flex items-center justify-center absolute ml-auto top-1 -right-0.5 w-[14px] h-[14px] rounded-full text-xs text-white-900 bg-red-800 z-20 ">
+                <div className="flex items-center justify-center absolute ml-auto top-0 -right-0.5 w-[14px] h-[14px] rounded-full text-xs text-white bg-[red] z-20 ">
                   1
                 </div>
               </div>

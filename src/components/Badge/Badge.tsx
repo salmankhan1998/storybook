@@ -23,6 +23,7 @@ const Badge: React.FC<BadgeProps> = ({
     >
       <div className="w-full max-w-15 h-[142px] rounded-lg overflow-hidden mb-3.5">
         <img src={imageUrl} alt="badge" className="w-full h-full object-cover" />
+        {/* <Image src={imageUrl} alt="badge" width="100" height='100'  /> */}
       </div>
       <Pill title={pillTitle} variant="pink" />
       <Typography

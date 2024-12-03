@@ -12,7 +12,7 @@ const ConnectMetaMask: React.FC<ConnectMetaMaskProps> = ({ onClick }) => {
   return (
     <div
       data-testid="ConnectMetaMask"
-      className="absolute rounded-3xl gradientRtoL top-0 "
+      className="absolute border rounded-3xl gradientRtoL top-0 "
     >
       <div className="absolute top-3 right-5">
         <Icon type="Cross" />
