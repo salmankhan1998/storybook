@@ -7,6 +7,7 @@ import Passport from "../Passport";
 import Typography from "../Typography";
 
 import "./Mint.module.css";
+import Icon from "../Icon";
 
 export interface MintingProps {
   username: string;
@@ -26,30 +27,35 @@ const Mint: React.FC<MintingProps> = ({
   // const mintingStart = useAppSelector((state) => state.eth.startMinting);
   // const dispatch = useAppDispatch();
   const [togglebio, setToggleBio] = useState(false);
-  const [bio, setBio] = useState("");
+  const [userName, setUserName] = useState(username);
+  const [bio, setBio] = useState('');
   // const eth = useAppSelector((state) => state.eth);
-  // const handleUsername = (e: any) => {
-  //   const value = e.target.value;
-  //   dispatch(UpdateuserName(value));
-  // };
+  const handleUsername = (e: any) => {
+    const value = e.target.value;
+    setUserName(value)
+    // dispatch(UpdateuserName(value));
+  };
   // const handleEmail = (e: any) => {
   //   dispatch(UpdateuserEmail(e.target.value));
   // };
   // const handleMinting = async () => {
   //   dispatch(MintPassport());
   // };
-  // const handleChangebio = (e: any) => {
-  //   const value = e.target.value;
-  //   dispatch(UpdateBio(value));
-  // };
-  // const handleSave = (e: any) => {
-  //   dispatch(SavePassportDetails());
-  //   setToggleBio(!togglebio);
-  // };
+
+  const handleChangebio = (e: any) => {
+    const value = e.target.value;
+    setBio(value)
+    // dispatch(UpdateBio(value));
+  };
+
+  const handleSave = () => {
+    // dispatch(SavePassportDetails());
+    setToggleBio(!togglebio);
+  };
   return (
     <div data-testid="Mint" className="flex flex-col items-center ">
       <div className="my-6">
-        {/* <Typography variant="H5" title="Create your passport" /> */}
+
         <Typography
           className="mb-10"
           fontWeight="bold"
@@ -60,10 +66,10 @@ const Mint: React.FC<MintingProps> = ({
       <div className="relative">
         <Passport
           address={'Islamabad'}
-          user={"Username"}
-          email={"Email"}
+          user={userName}
+          email={email}
           isIterable={true}
-          handleUsername={() => { }}
+          handleUsername={(e) => handleUsername(e)}
           handleEmail={() => { }}
         />
       </div>
@@ -76,33 +82,16 @@ const Mint: React.FC<MintingProps> = ({
                 onClick={() => setToggleBio(!togglebio)}
               >
                 <div className="mr-4 cursor-pointer">
-                  <Image src="/images/plus-icon.svg" alt="" width={24} height={24} />
+                  <Icon type="Edit" />
                 </div>
                 Add bio
-              </div>
-            )}
-            {!togglebio && (
-              <div className="mr-3">
-                <Image
-                  src="/images/edit-icon.svg"
-                  alt=""
-                  width={24}
-                  height={24}
-                  onClick={() => setToggleBio(!togglebio)}
-                />
               </div>
             )}
           </div>
           {togglebio && (
             <div className="relative flex flex-col w-full mb-3 bg-white-900 border-2 h-90 rounded-xl">
               <div className="self-end h-10 pt-2 pr-10 ">
-                <Image
-                  src="/cross.svg"
-                  alt=""
-                  width={24}
-                  height={24}
-                  onClick={() => setToggleBio(!togglebio)}
-                />
+                <Icon type="Cross" handleClick={() => setToggleBio(!togglebio)} />
               </div>
 
               <div className="flex flex-col px-10 pt-0 pb-10">
@@ -112,8 +101,8 @@ const Mint: React.FC<MintingProps> = ({
                   </label>
                   <textarea
                     rows={4}
-                    value=''
-                    onChange={() => { }}
+                    value={bio}
+                    onChange={(e) => handleChangebio(e)}
                     className="font-mukta text-base font-normal text-black-900 leading-[24px] border-2 rounded focus:border-white-900 w-full py-4 px-5 "
                   />
                 </div>
@@ -124,7 +113,7 @@ const Mint: React.FC<MintingProps> = ({
                     title="save"
                     round="half"
                     // disabled={mintingStart}
-                    handleClick={() => { }}
+                    handleClick={() => { handleSave() }}
                   />
                 </div>
               </div>
@@ -132,7 +121,7 @@ const Mint: React.FC<MintingProps> = ({
           )}
           {!togglebio && (
             <p className="w-full align-left text-base leading-[24px] font-normal text-black-900 mb-8">
-              Bio
+              Bio: {bio}
             </p>
           )}
 

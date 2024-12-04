@@ -34,7 +34,9 @@ const Form: React.FC<FormProps> = ({
       data-testid="Form"
       className="relative p-6 bg-white-900 border max-w-40"
     >
-      <div className="h-[150px] bg-gray-600 rounded-lg"></div>
+      <div className="h-[150px] rounded-lg overflow-hidden">
+        <img src="/image.jpg" alt="profile cover image" className="w-full h-full object-cover" />
+      </div>
       <div className="flex flex-col items-center -mt-[90px]">
         <Avatar variant="large-avatar" radius="full" src={avatar} />
         <p className="mt-4 text-base font-normal leading-6">{username}</p>
