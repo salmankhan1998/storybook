@@ -20,7 +20,7 @@ export interface PassportProps {
 
 const Images = {
   crossIcon: "/cross.svg",
-  passport: "/images/passport.svg",
+  passport: "/t2-logo.svg",
   ellipse: "/images/ellipse.svg",
   moon: "/images/moon.svg",
   t2Passport: "/images/t2-passport.svg",
@@ -48,8 +48,8 @@ const Passport: React.FC<PassportProps> = ({
     <div
       data-testid="Passport"
       className={`w-full ${userManagement
-          ? "max-w-[365px] pt-[15px] px-[24px] pb-[22px]"
-          : "max-w-[604px] pt-[40px] px-[45px] pb-[36px]"
+        ? "max-w-[365px] pt-[15px] px-[24px] pb-[22px]"
+        : "max-w-[604px] pt-[40px] px-[45px] pb-[36px]"
         } bg-white-900 rounded-2xl shadow-md `}
     >
       <div
@@ -59,10 +59,11 @@ const Passport: React.FC<PassportProps> = ({
         <div className="flex space-x-9">
           <div
             className={` flex-shrink-0 ${userManagement
-                ? "w-[88px] h-[88px] rounded-full"
-                : "w-[119px] h-[119px] rounded-xl"
+              ? "w-[88px] h-[88px] rounded-full"
+              : "w-[119px] h-[119px] rounded-xl"
               } overflow-hidden`}
           >
+
             <Image
               src={Images.passport}
               alt="passport icon"
@@ -116,29 +117,18 @@ const Passport: React.FC<PassportProps> = ({
 
               <p
                 className={`font-mukta text-sm font-normal  ${userManagement
-                    ? "text-black-800 text-center leading-[17px] rounded-sm py-[3.5px] bg-green-500"
-                    : "text-blue-900 leading-[20px]"
+                  ? "text-black-800 text-center leading-[17px] rounded-sm py-[3.5px] bg-green-500"
+                  : "text-blue-900 leading-[20px]"
                   } mt-3`}
               >
                 {user ? user : "Alpha user"}
               </p>
               {!userManagement && (
-                <>
-                  <div className="w-[41px] h-[41px] mt-5">
-                    <Image
-                      src={Images.ellipse}
-                      alt="ellipse image"
-                      width={41}
-                      height={41}
-                      objectFit="cover"
-                    />
-                  </div>
-                  <p className="font-mukta mt-2  text-sm font-normal leading-[20px]">
-                    Crypto
-                    <br />
-                    wonderland
-                  </p>
-                </>
+                <p className="font-mukta mt-2  text-sm font-normal leading-[20px]">
+                  Crypto
+                  <br />
+                  wonderland
+                </p>
               )}
             </div>
 
@@ -156,8 +146,8 @@ const Passport: React.FC<PassportProps> = ({
         </div>
         <div
           className={`${userManagement
-              ? "flex flex-row-reverse justify-between items-end"
-              : ""
+            ? "flex flex-row-reverse justify-between items-end"
+            : ""
             }`}
         >
           <div className="flex items-baseline justify-end space-x-2">
@@ -222,7 +212,6 @@ const Passport: React.FC<PassportProps> = ({
         </div>
       )}
       <div className="flex items-center justify-center">
-        {!userManagement && <img src={Images.t2Passport} alt="t2 passport" />}
         <Icon type="ArrowLeft" />
         <Icon type="ArrowLeft" />
         <div className="w-max flex text-sm text-black-800 font-normal p-1.5 leading-3">
