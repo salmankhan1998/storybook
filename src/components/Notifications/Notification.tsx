@@ -25,7 +25,7 @@ const Notifications: React.FC<NotificationsProps> = ({
       />
       <div className="mt-4 divide-y divide-[#CFD4DB]">
         {notifications?.map((val, index) => (
-          <div key={index} className="flex space-x-2  py-3">
+          <div key={index} className="flex items-center space-x-2  py-3">
             <div className="w-1 h-1 bg-red-800 rounded-full"></div>
             <Typography
               className=""
